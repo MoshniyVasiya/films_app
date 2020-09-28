@@ -1,0 +1,75 @@
+.film_profile
+  display: flex
+  flex-direction: column
+  background-color: #202020
+  min-height: 100vh
+  max-width: 1600px
+  margin: 0 auto
+
+.trailer_wrapper
+  span
+    margin: 0 auto
+  .video
+    width: unset!important
+    height: 300px!important
+
+
+.info_wrapper
+  margin: 50px 140px 50px
+  display: flex
+  .film_banner
+    display: flex
+    flex-direction: column
+    position: relative
+    > span
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 29px
+      color: #FFFFFF
+      position: absolute
+      top: -40px
+      left: -115px
+      cursor: pointer
+      img
+        width: 34px
+    .rating
+      margin-top: 50px
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 44px
+      color: #FFFFFF
+      span
+        font-size: 48px
+        line-height: 59px
+  .film_info
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin-left: 40px
+    h1
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 59px
+      color: #FFFFFF
+      max-width: 545px
+    .detailed_info
+      display: flex
+      flex-direction: column
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 150%
+      color: #FFFFFF
+      span
+        margin-top: 30px
+        &:first-child
+          margin-top: 50px
+        &:last-child
+          margin-top: 50px

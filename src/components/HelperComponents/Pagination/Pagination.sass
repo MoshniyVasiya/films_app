@@ -1,0 +1,92 @@
+.pagination-container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-color: transparent
+  padding: 0px 0 10px
+
+
+.pagination-list 
+  display: flex
+  li 
+    border-radius: 0
+    min-width: 45px
+    height: 48px
+    display: flex
+    align-items: center
+    justify-content: center
+    -webkit-transition: all ease .3s
+    -moz-transition: all ease .3s
+    -ms-transition: all ease .3s
+    -o-transition: all ease .3s
+    transition: all ease .3s
+    a
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      padding: 0 5px
+      box-sizing: border-box
+      img 
+        opacity: 0.8
+        &:hover
+          opacity: 1
+        
+      
+    
+  
+
+
+.pagination-link 
+  cursor: pointer
+  background: transparent
+  color: #4A5568
+  text-decoration: none
+  text-align: center
+  height: 32px
+  min-width: 32px
+  font-size: 18px
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: 500
+  line-height: 22px
+  &.pagination-link-active 
+    border-radius: 0
+    color: #ffffff
+  
+
+
+.pagination-ellipsis 
+  display: flex
+  align-items: center
+  justify-content: center
+  pointer-events: none
+  a 
+    cursor: pointer
+    background: transparent
+    height: 32px
+    width: 32px
+    color: #8494B9
+    text-decoration: none
+    text-align: center
+    line-height: 28px
+  
+
+.next, .previous 
+  margin: 0
+
+  &.disabled 
+    opacity: 1
+  
+
+  a 
+    display: flex
+    align-items: center
+    justify-content: center
+    svg 
+      font-size: 20px
+      fill: #8494B9
+    
+  

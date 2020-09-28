@@ -1,0 +1,95 @@
+header
+  width: 100%
+
+.slider_home
+  transition: all 0.3s linear
+
+  &:hover
+    .slick-prev
+      opacity: 1
+
+    .slick-next
+      opacity: 1
+  
+
+  .slick-prev
+    opacity: 0
+    position: absolute
+    left: 0
+    font-size: 0
+    height: 100%
+    width: 40px
+    z-index: 20
+    color: #ffffff
+    &:before
+      background-image: url(../../../assets/images/Arrow_1.png)
+      background-size: 50px 20px
+      position: absolute
+      left: 0
+      top: 80%
+      content: ''
+      width: 50px
+      height: 20px
+      margin-left: 140px
+
+  .slick-next
+    opacity: 0
+    font-size: 0
+    position: absolute
+    right: 0px
+    height: 100%
+    width: 40px
+    z-index: 20
+    color: #ffffff
+    &:before
+      background-image: url(../../../assets/images/Arrow_2.png)
+      background-size: 50px 20px
+      content: ''
+      position: absolute
+      right: 0
+      top: 80%
+      width: 50px
+      height: 20px
+      margin-right: 140px
+  
+
+  .slick-slide 
+    img 
+      width: 100%
+      height: auto
+      background-size: 100% 100%
+  
+
+
+  .slider_items
+    position: relative
+    display: flex !important
+    justify-content: center
+    max-height: 600px
+    width: 100%
+    box-sizing: border-box
+    span
+      position: absolute
+      top: 25%
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 120%
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      color: #202020
+    .year
+      left: 0
+      margin-left: 140px
+      color: #FFFFFF
+    .film_name
+      right: 0
+      margin-right: 140px
+      max-width: 295px
+      text-align: right
+      color: #FFFFFF
+    img 
+      width: 100%
+      height: 100%
+

@@ -1,0 +1,90 @@
+.search_container
+  position: relative
+  margin: 0 140px
+  h2
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 64px
+    line-height: 78px
+    color: #ffffff
+    margin-top: -48px
+    margin-bottom: 20px
+  .search_input
+    position: relative
+    width: fit-content
+    input
+      height: 50px
+      width: 540px
+      padding: 0 25px
+      box-sizing: border-box
+      font-family: 'Montserrat', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 18px
+      line-height: 22px
+    &::before
+      position: absolute
+      content: ""
+      z-index: 1
+      right: 26px
+      top: calc(50% - 13px)
+      background: url("../../assets/images/search.svg")
+      height: 26px
+      width: 26px
+      opacity: 0.5
+      background-size: 100% 100%
+
+
+.search_result
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  margin: 100px 140px 0
+  .result_item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: 'Montserrat', sans-serif
+    font-style: normal
+    font-weight: 500
+    color: #878787
+    position: relative
+    margin-top: 50px
+    width: calc(100% - 300px)
+    cursor: pointer
+    &:hover
+      color: #FFFFFF
+    .item_name
+      span
+        padding-left: 15px
+        font-size: 36px
+        line-height: 44px
+        text-align: left
+      &:hover
+        .poster
+          display: block
+        .empty
+          display: flex
+      .poster
+        position: absolute
+        left: -300px
+        top: -130px
+        display: none
+      .empty
+        width: 300px
+        height: 400px
+        background-color: #878787
+        align-items: center
+        justify-content: center
+        font-family: 'Montserrat', sans-serif
+        font-weight: 700
+        font-size: 36px
+        display: none
+    div
+      display: flex
+      flex-direction: column
+      text-align: right
+      span
+        font-size: 18px
+        line-height: 22px
