@@ -37,7 +37,7 @@ function Page() {
         <TransitionedBlock classes="film_profile">
             <div className="trailer_wrapper">
                {state.error_trailer ?
-                   alert(state.error_trailer)
+                   alert(`${state.error_trailer}\nTrailer was not found`)
                    :
                    <ReactPlayer
                     url={state.video_link}

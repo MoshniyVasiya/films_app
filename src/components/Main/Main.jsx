@@ -24,7 +24,7 @@ function Main() {
         if(search_data && search_data.Response === "True"){ // example for context
             setState({...state, search_response: search_data});
         }else if(typeof localStorage !== "undefined"){
-            if(JSON.parse(localStorage.getItem('search_data')).hasOwnProperty('Search')){
+            if(localStorage.getItem('search_data') && JSON.parse(localStorage.getItem('search_data')).hasOwnProperty('Search')){
                 setState({...state, search_response: JSON.parse(localStorage.getItem('search_data'))});
             }
         }

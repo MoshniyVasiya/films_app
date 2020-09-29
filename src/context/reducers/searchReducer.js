@@ -1,7 +1,7 @@
 export const initialSearchState = {
-    search_data: JSON.parse(localStorage.getItem('search_data')),
-    search_value: localStorage.getItem('search_value'),
-    page: localStorage.getItem('page'),
+    search_data: {},
+    search_value: '',
+    page: 1,
 };
 
 export const SearchReducer = (state, action) => {
